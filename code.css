@@ -1,0 +1,40 @@
+/* Basic Reset and Body Styles */
+body {
+  font-family: sans-serif;
+  background-color: #f0f2f5; /* A light grey background */
+  color: #1c1e21; /* A dark grey for text */
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Header and Footer Styles */
+header {
+  margin-bottom: 20px;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #606770;
+}
+
+/* Chatbot Container Styles */
+.chatbot-container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto; /* This centers the container */
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Keeps the iframe inside the rounded corners */
+}
+
+/* iFrame Styles - This is the important part */
+.chatbot-container iframe {
+  width: 100%;
+  height: 60vh; /* 60% of the viewport height */
+  min-height: 500px; /* Minimum height */
+  border: none;
+  display: block; /* Removes extra space under the iframe */
+}
